@@ -4,15 +4,15 @@ Modular C2 loader featuring dynamic function encryption, in-memory payload suppo
 
 ## Technical specifications:
 + Function encryption (decrypt → exec → re-encrypt)
-+  + Reverse-shell module  
++ Reverse-shell module  
 + FS-mgr: search/scach/upload/delete files  
 + Token stealth: collection and impersonation of user tokens  
 + - In-memory peyloads: reflective shellcode or loadPE (.DLL/.EXE/.NET)  
 + RWX shellcode  
 + CLI-builder: build with required parameters (via a separate py builder)
 + C2 channel via DNS over HTTPS (Cloudflare/Google/Akamai DoH)  
-- NT/ZW syscall stubs, min WinAPI  
-- VM-based bytecode interpreter: each build with unique morphing  
++ - NT/ZW syscall stubs, min WinAPI  
++ - VM-based bytecode interpreter: each build with unique morphing  
 + Reverse-SOCKS5 proxy over WebSocket as a separate thread  
 + - Anti VM wrapper + DLL hijack  
 + OneDrive/Scheduler   
