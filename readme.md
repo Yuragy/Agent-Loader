@@ -16,7 +16,9 @@ Modular C2 loader featuring dynamic function encryption, in-memory payload suppo
 + Reverse-SOCKS5 proxy over WebSocket as a separate thread  
 + - Anti VM wrapper + DLL hijack  
 + OneDrive/Scheduler   
-+ Web panel on Node.js: list of bots, FS mgr, interactive shell, start custom peyloads, IP/HWID banlist.  
++ Web panel on Node.js: list of bots, FS mgr, interactive shell, start custom peyloads, IP/HWID banlist.
++ 
+(Some of the fucncials on the list are under development, keep an eye out for updates)
 
 # Structure
 - loader client
