@@ -3,8 +3,8 @@
 Modular C2 loader featuring dynamic function encryption, in-memory payload support, and a covert DoH command channel, configurable via a Python builder and a Node.js web panel.
 
 ## Technical specifications:
-+ Function encryption (decrypt → exec → re-encrypt)  
-+ Reverse-shell module  
+1. + Function encryption (decrypt → exec → re-encrypt)  
+2. + Reverse-shell module  
 + FS-mgr: search/scach/upload/delete files  
 + Token stealth: collection and impersonation of user tokens  
 + - In-memory peyloads: reflective shellcode or loadPE (.DLL/.EXE/.NET)  
@@ -78,4 +78,6 @@ Edits:
 - Check pailoads
 - DLL hijack intergr
 - Rewrite base on NT/ZW syscall get off WinApi
-- VM bytecode interpreter? 
+- VM bytecode interpreter?
+
+⚠️ This is a training material demonstrating capabilities, the responsibility to use it lies with you.
