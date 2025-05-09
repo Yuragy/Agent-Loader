@@ -50,8 +50,8 @@ How to package functions before building, for encryption:
 
 # Loader Quick Start Guide ⇄ Server
 # Start Server
-npm install # dependencies
-npm start # start
+- npm install # dependencies
+- npm start # start
 
 **Loader works**: 
 1. Save check
