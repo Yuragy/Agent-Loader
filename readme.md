@@ -49,11 +49,11 @@ How to package functions before building, for encryption:
   3. The build will automatically detect the length of each function and replace /*LEN*/ with the actual length. 
 
 # Loader Quick Start Guide ⇄ Server
-# Start Server
+### Start Server
 - npm install # dependencies
 - npm start # start
 
-**Loader works**: 
+### Loader works: 
 1. Save check
 2. Persistence
 3. Makes token stealth(how to where for what, yeah, think while it takes everything and uses the first one it finds)
@@ -73,7 +73,7 @@ How to package functions before building, for encryption:
 7. Reverse shell + SOCKS5 starts immediately at the entry point
 8. Stop completes all modules and exits
 
-Edits:
+### Edits:
 - Debug the build through py builder
 - It is possible to finalize the panel to be more comfortable
 - Under dllmain
