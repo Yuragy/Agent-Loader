@@ -26,16 +26,14 @@ Modular C2 loader featuring dynamic function encryption, in-memory payload suppo
 - build.py - convenient build
 
 # Build
-   python builder.py
-   
-   Enter RSHELL_PORT, SOCKS login/password, DoH server.
+   Enter: RSHELL_PORT, SOCKS login/password, DoH server.
    
    Enter = leave the default value as prescribed in the py code. 
    
-   As a result you will get:
-   - loader.exe - compiled image
-   - loader.map - PE map
-   - loader_packed.exe - final packed binary
+   Result you will get:
+    - loader.exe - compiled image
+    - loader.map - PE map
+    - loader_packed.exe - final packed binary
 
 ## More about building with encryption
 builder.py:          
