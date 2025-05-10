@@ -34,7 +34,7 @@ Modular C2 loader featuring dynamic function encryption, in-memory payload suppo
    - loader.map - PE map
    - loader_packed.exe - final packed binary
 
-## A bit more about building with encryption
+## More about building with encryption
 builder.py:          
 Generates config.h, compiles, packs → loader.exe + loader.map + loader_packed.exe
   1. Rewrites config.h to match the given parameters in cli 
