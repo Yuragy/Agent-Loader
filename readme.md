@@ -49,7 +49,7 @@ How to package functions before building, for encryption:
   3. The build will automatically detect the length of each function and replace /*LEN*/ with the actual length. 
 
 # Loader Quick Start Guide ⇄ Server
-### Start Server
+### Start Server: 
 - npm install # dependencies
 - npm start # start
 
