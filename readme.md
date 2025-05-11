@@ -24,6 +24,7 @@ Modular C2 loader featuring dynamic function encryption, in-memory payload suppo
 - loader client
 - server C2 server+panel
 - build.py - convenient build
+- socks5 - fully independent server client for reverse proxy tests
 
 # Build
    Enter: RSHELL_PORT, SOCKS login/password, DoH server.
