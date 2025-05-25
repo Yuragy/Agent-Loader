@@ -32,9 +32,9 @@ Modular C2 loader featuring dynamic function encryption, in-memory payload suppo
    Enter = leave the default value as prescribed in the py code. 
    
    Result you will get:
-    - loader.exe - compiled image
-    - loader.map - PE map
-    - loader_packed.exe - final packed binary
+    `loader.exe - compiled image`
+    `loader.map - PE map`
+    `loader_packed.exe - final packed binary`
 
 ## More about building with encryption
 builder.py:          
