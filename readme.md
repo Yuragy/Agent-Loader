@@ -25,7 +25,7 @@
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 /loader          -> client implant
@@ -83,9 +83,9 @@ graph TD
 
 ---
 
-## ⚡ Quick-Start Guide (Loader ⇄ Server)
+##  Quick-Start Guide (Loader ⇄ Server)
 
-### 🚀 Start the Server
+###  Start the Server
 
 ```bash
 cd server
@@ -93,7 +93,7 @@ npm install   # dependencies
 npm start     # launches at http://localhost/
 ```
 
-### 🤖 Loader Workflow
+###  Loader Workflow
 
 1. **Integrity check** (saved state)
 
@@ -124,7 +124,7 @@ npm start     # launches at http://localhost/
 
 8. `stop_proxy` gracefully terminates all modules and exits.
 
-### ✏️ Potential Improvements
+###  Potential Improvements
 
 * Fine-tune the Python builder for easier debugging
 * Enhance the web panel UX
