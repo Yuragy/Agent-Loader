@@ -4,7 +4,7 @@
 
 ---
 
-## ⚙️ Technical Specifications
+## Technical Specifications
 
 - **Function encryption** – decrypt → execute → re-encrypt  
 - **Reverse-shell module**  
@@ -36,7 +36,7 @@
 
 ---
 
-## 🛠️ Build Process
+## Build Process
 
 ```
 Prompt values: RSHELL_PORT · SOCKS login/password · DoH server
@@ -49,7 +49,7 @@ Prompt values: RSHELL_PORT · SOCKS login/password · DoH server
 | `loader.map`        | PE map                          |
 | `loader_packed.exe` | final, encrypted / packed build |
 
-### 🔒 Building with Encryption (`builder.py`)
+### Building with Encryption
 
 ```mermaid
 graph TD
