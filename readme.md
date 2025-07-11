@@ -10,7 +10,7 @@
 - **Reverse-shell module**  
 - **FS-mgr** – search / cache / upload / delete files  
 - **Token stealth** – collection & impersonation of user tokens  
-- **In-memory payloads** – reflective shellcode or **loadPE** (`.DLL` / `.EXE` / `.NET`)  
+- **In-memory payloads** – reflective shellcode or **loadPE** (.DLL / .EXE / .NET)  
 - **RWX shellcode execution**  
 - **CLI builder** – generate binaries with custom parameters via a Python script  
 - **C2 over DNS-over-HTTPS** (Cloudflare / Google / Akamai)  
@@ -78,7 +78,7 @@ graph TD
    Crypto_Invoke(FuncName, /*LEN*/, 0x5A);
    ```
 
-3. During build, `/*LEN*/` is automatically replaced with the actual byte length.
+3. During build, /*LEN*/ is automatically replaced with the actual byte length.
 
 ---
 
@@ -119,18 +119,18 @@ npm start      launches at http://localhost/
    | `load_dotnet`     | Load .NET assembly via CLR ≥ v4                            |
    | `exec_reflective` | Run reflective PE or shellcode                             |
 
-7. Reverse shell + SOCKS5 start **immediately** at entry point.
+7. Reverse shell + SOCKS5 start immediately at entry point.
 
-8. `stop_proxy` gracefully terminates all modules and exits.
+8. stop_proxy gracefully terminates all modules and exits.
 
 ###  Potential Improvements
 
 * Fine-tune the Python builder for easier debugging
 * Enhance the web panel UX
-* Harden `DllMain` logic
+* Harden DllMain logic
 * Expand payload support
 * Integrate DLL hijacking fully
-* Migrate to pure NT/ZW syscalls (remove WinAPI)
+* Migrate to pure NT/ZW syscalls remove WinAPI
 * Finish VM bytecode interpreter
 
 ---
