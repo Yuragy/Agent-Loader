@@ -65,17 +65,16 @@ graph TD
    ```bash
    cl /link /MAP:loader.map /OUT:loader.exe
    ```
-3. Parse `loader.map`, locate addresses & lengths for every function in **`FUNCS`**.
-4. Encrypt those byte ranges → output `loader_packed.exe`.
+3. Parse loader.map, locate addresses & lengths for every function in FUNCS.
+4. Encrypt those byte ranges → output loader_packed.exe.
 
 #### Adding a Function to the Encryption List
 
-1. Append its name to the `FUNCS = [ ... ]` array in *builder.py*.
+1. Append its name to the FUNCS array in builder.py.
 
 2. Wrap the call inside code:
 
-   ```cpp
-   #include "crypto.h"
+   ```
    Crypto_Invoke(FuncName, /*LEN*/, 0x5A);
    ```
 
@@ -87,10 +86,10 @@ graph TD
 
 ###  Start the Server
 
-```bash
+```
 cd server
-npm install   # dependencies
-npm start     # launches at http://localhost/
+npm install    dependencies
+npm start      launches at http://localhost/
 ```
 
 ###  Loader Workflow
