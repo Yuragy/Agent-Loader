@@ -59,10 +59,10 @@ graph TD
     D --> E[emit loader_packed.exe]
 ```
 
-1. **Rewrite** `config.h` with CLI parameters.
+1. **Rewrite** config.h with CLI parameters.
 2. Invoke
 
-   ```bash
+   ```
    cl /link /MAP:loader.map /OUT:loader.exe
    ```
 3. Parse loader.map, locate addresses & lengths for every function in FUNCS.
