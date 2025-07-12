@@ -94,21 +94,21 @@ npm start      launches at http://localhost/
 
 ###  Loader Workflow
 
-1. **Integrity check** (saved state)
+1. **Integrity check** saved state
 
 2. **Persistence** setup
 
-3. **Token stealth** (steals the first valid token found)
+3. **Token stealth** steals the first valid token found
 
-4. Open session → send single **“A”** beacon (online mark)
+4. Open session → send single **A** beacon online mark
 
 5. **C2 loop** every 5 s → DoH request → parse response
 
 6. Supported commands:
 
-   | Command           | Action (summary)                                           |
+   | Command           | Action                                                     |
    | ----------------- | ---------------------------------------------------------- |
-   | `start_proxy`     | Reverse shell on **RSHELL\_PORT** + reverse SOCKS5 over WS |
+   | `start_proxy`     | Reverse shell on RSHELL\_PORT + reverse SOCKS5 over WS |
    | `stop_proxy`      | Stop both proxy and shell                                  |
    | `list_dir`        | Directory listing                                          |
    | `file_get`        | Read file → buffer → C2                                    |
