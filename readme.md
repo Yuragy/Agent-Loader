@@ -10,7 +10,7 @@
 - **Reverse-shell module**  
 - **FS-mgr** – search / cache / upload / delete files  
 - **Token stealth** – collection & impersonation of user tokens  
-- **In-memory payloads** – reflective shellcode or **loadPE** (.DLL / .EXE / .NET)  
+- **In-memory payloads** – reflective shellcode or loadPE (.DLL / .EXE / .NET)  
 - **RWX shellcode execution**  
 - **CLI builder** – generate binaries with custom parameters via a Python script  
 - **C2 over DNS-over-HTTPS** (Cloudflare / Google / Akamai)  
@@ -21,7 +21,7 @@
 - **OneDrive / Task Scheduler persistence**  
 - **Node.js web panel** – bot list, FS-mgr, interactive shell, custom payloads, IP/HWID ban-list  
 
-> *Items marked as “under development” will be shipped in future updates—stay tuned !*
+> *Items marked as “under development” will be shipped in future updates—stay tuned*
 
 ---
 
@@ -31,7 +31,7 @@
 /loader          -> client implant
 /server          -> C2 server + web panel
 /build.py        -> convenient build script
-/socks5          -> standalone reverse-proxy test client & server
+/socks5          -> standalone reverse proxy test client & server
 ````
 
 ---
@@ -40,7 +40,7 @@
 
 ```
 Prompt values: RSHELL_PORT · SOCKS login/password · DoH server
-(Press ↵ to keep each default cached inside the script)
+Press ↵ to keep each default cached inside the script
 ```
 
 | Output file         | Description                     |
@@ -59,7 +59,7 @@ graph TD
     D --> E[emit loader_packed.exe]
 ```
 
-1. **Rewrite** config.h with CLI parameters.
+1. Rewrite config.h with CLI parameters.
 2. Invoke
 
    ```
@@ -94,15 +94,15 @@ npm start      launches at http://localhost/
 
 ###  Loader Workflow
 
-1. **Integrity check** saved state
+1. Integrity check saved state
 
-2. **Persistence** setup
+2. Persistence setup
 
-3. **Token stealth** steals the first valid token found
+3. Token stealth steals the first valid token found
 
-4. Open session → send single **A** beacon online mark
+4. Open session → send single A beacon online mark
 
-5. **C2 loop** every 5 s → DoH request → parse response
+5. C2 loop every 5 s → DoH request → parse response
 
 6. Supported commands:
 
