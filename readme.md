@@ -21,7 +21,7 @@
 - **OneDrive / Task Scheduler persistence**  
 - **Node.js web panel** – bot list, FS-mgr, interactive shell, custom payloads, IP/HWID ban list  
 
-> *Items marked as “under development” will be shipped in future updates—stay tuned*
+> Items marked as under development will be shipped in future updates—stay tuned
 
 ---
 
