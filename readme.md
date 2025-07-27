@@ -21,18 +21,18 @@
 - **OneDrive / Task Scheduler persistence**  
 - **Node.js web panel** – bot list, FS-mgr, interactive shell, custom payloads, IP/HWID ban list  
 
-> Items marked as under development will be shipped in future updates—stay tuned
+> Items marked as under development will be shipped in future updates — stay tuned
 
 ---
 
 ## Project Structure
 
-```
-/loader          -> client implant
-/server          -> C2 server + web panel
-/build.py        -> convenient build script
-/socks5          -> standalone reverse proxy test client & server
-````
+
+* loader          -> client implant
+* server          -> C2 server + web panel
+* build.py        -> convenient build script
+* socks5          -> standalone reverse proxy test client & server
+
 
 ---
 
