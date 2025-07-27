@@ -10,16 +10,16 @@
 - **Reverse-shell module**  
 - **FS-mgr** – search / cache / upload / delete files  
 - **Token stealth** – collection & impersonation of user tokens  
-- **In-memory payloads** – reflective shellcode or loadPE (.DLL / .EXE / .NET)  
+- **In-memory payloads** – reflective shellcode or loadPE .DLL / .EXE / .NET  
 - **RWX shellcode execution**  
 - **CLI builder** – generate binaries with custom parameters via a Python script  
-- **C2 over DNS-over-HTTPS** (Cloudflare / Google / Akamai)  
+- **C2 over DNS-over-HTTPS** Cloudflare / Google / Akamai  
 - **NT/ZW syscall stubs**, minimal WinAPI footprint  
 - **VM-based bytecode interpreter** – every build morphs uniquely  
-- **Reverse-SOCKS5 proxy** over WebSocket (separate thread)  
+- **Reverse-SOCKS5 proxy** over WebSocket separate thread  
 - **Anti-VM wrapper + DLL hijack**  
 - **OneDrive / Task Scheduler persistence**  
-- **Node.js web panel** – bot list, FS-mgr, interactive shell, custom payloads, IP/HWID ban-list  
+- **Node.js web panel** – bot list, FS-mgr, interactive shell, custom payloads, IP/HWID ban list  
 
 > *Items marked as “under development” will be shipped in future updates—stay tuned*
 
@@ -45,9 +45,9 @@ Press ↵ to keep each default cached inside the script
 
 | Output file         | Description                     |
 | ------------------- | ------------------------------- |
-| `loader.exe`        | compiled implant                |
-| `loader.map`        | PE map                          |
-| `loader_packed.exe` | final, encrypted / packed build |
+| loader.exe        | compiled implant                |
+| loader.map        | PE map                          |
+| loader_packed.exe | final, encrypted / packed build |
 
 ### Building with Encryption
 
@@ -82,7 +82,7 @@ graph TD
 
 ---
 
-##  Quick-Start Guide (Loader ⇄ Server)
+##  Quick-Start Guide Loader ⇄ Server
 
 ###  Start the Server
 
@@ -108,16 +108,16 @@ npm start      launches at http://localhost/
 
    | Command           | Action                                                     |
    | ----------------- | ---------------------------------------------------------- |
-   | `start_proxy`     | Reverse shell on RSHELL\_PORT + reverse SOCKS5 over WS |
-   | `stop_proxy`      | Stop both proxy and shell                                  |
-   | `list_dir`        | Directory listing                                          |
-   | `file_get`        | Read file → buffer → C2                                    |
-   | `file_put`        | Base64 → file write                                        |
-   | `file_del`        | Delete file / dir                                          |
-   | `run_shellcode`   | Decode → RWX → exec                                        |
-   | `load_pe`         | Memory-load PE (dll/exe)                                   |
-   | `load_dotnet`     | Load .NET assembly via CLR ≥ v4                            |
-   | `exec_reflective` | Run reflective PE or shellcode                             |
+   | start_proxy     | Reverse shell on RSHELL\_PORT + reverse SOCKS5 over WS |
+   | stop_proxy      | Stop both proxy and shell                                  |
+   | list_dir        | Directory listing                                          |
+   | file_get        | Read file → buffer → C2                                    |
+   | file_put        | Base64 → file write                                        |
+   | file_del        | Delete file / dir                                          |
+   | run_shellcode   | Decode → RWX → exec                                        |
+   | load_pe         | Memory-load PE dll/exe                                   |
+   | load_dotnet     | Load .NET assembly via CLR ≥ v4                            |
+   | exec_reflective | Run reflective PE or shellcode                             |
 
 7. Reverse shell + SOCKS5 start immediately at entry point.
 
@@ -137,6 +137,6 @@ npm start      launches at http://localhost/
 
 ## 🚫 Disclaimer
 
-This repository is provided for **educational purposes only** and intended for **authorized security research**.
-Use of these materials in unauthorized or illegal activities is **strictly prohibited**.
+This repository is provided for educational purposes only and intended for authorized security research.
+Use of these materials in unauthorized or illegal activities is strictly prohibited.
 
